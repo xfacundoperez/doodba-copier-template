@@ -1,3 +1,4 @@
+import logging
 import re
 import time
 from pathlib import Path
@@ -9,6 +10,8 @@ from plumbum.cmd import docker_compose, invoke
 from plumbum.machines.local import LocalCommand
 
 from .conftest import socket_is_open
+
+_logger = logging.getLogger(__name__)
 
 
 def _install_status(module, dbname="devel"):
@@ -52,6 +55,7 @@ def _tests_ran(stdout, odoo_version, addon_name):
         assert not re.search(fr"{main_pkg}\.addons\.base\.tests\.\w+{suffix}", stdout)
 
 
+@pytest.mark.sequential
 def test_resetdb(
     cloned_template: Path,
     docker: LocalCommand,
@@ -117,7 +121,15 @@ def test_resetdb(
     finally:
         # Imagine the user is in the odoo subrepo for this command
         with local.cwd(tmp_path / "odoo" / "custom" / "src" / "odoo"):
-            invoke("stop", "--purge")
+            try:
+                # Previously active containers
+                _logger.error(docker_compose("ps"))
+                _logger.error(docker("ps"))
+                invoke("stop", "--purge")
+            except ProcessExecutionError as e:
+                _logger.error(docker_compose("ps"))
+                _logger.error(docker("ps"))
+                raise e
 
 
 @pytest.mark.sequential
@@ -162,7 +174,15 @@ def test_start(
     finally:
         # Imagine the user is in the odoo subrepo for this command
         with local.cwd(tmp_path / "odoo" / "custom" / "src" / "odoo"):
-            invoke("stop", "--purge")
+            try:
+                # Previously active containers
+                _logger.error(docker_compose("ps"))
+                _logger.error(docker("ps"))
+                invoke("stop", "--purge")
+            except ProcessExecutionError as e:
+                _logger.error(docker_compose("ps"))
+                _logger.error(docker("ps"))
+                raise e
 
 
 @pytest.mark.sequential
@@ -233,4 +253,12 @@ def test_install_test(
     finally:
         # Imagine the user is in the odoo subrepo for this command
         with local.cwd(tmp_path / "odoo" / "custom" / "src" / "odoo"):
-            invoke("stop", "--purge")
+            try:
+                # Previously active containers
+                _logger.error(docker_compose("ps"))
+                _logger.error(docker("ps"))
+                invoke("stop", "--purge")
+            except ProcessExecutionError as e:
+                _logger.error(docker_compose("ps"))
+                _logger.error(docker("ps"))
+                raise e
