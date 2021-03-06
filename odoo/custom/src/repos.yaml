@@ -9,8 +9,35 @@
     ocb: https://github.com/OCA/OCB.git
     odoo: https://github.com/odoo/odoo.git
     openupgrade: https://github.com/OCA/OpenUpgrade.git
-  target: ocb $ODOO_VERSION
+  target: odoo $ODOO_VERSION
   merges:
-    - ocb $ODOO_VERSION
+    - odoo $ODOO_VERSION
     # Example of a merge of the PR with the number <PR>
     # - oca refs/pull/<PR>/head
+    
+hcsinergia:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    origin: https://github.com/xfacundoperez/hcsinergia.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+        
+odoo-argentina:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    origin: https://github.com/ingadhoc/odoo-argentina.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+            
+odoo-argentina-ce:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    origin: https://github.com/olmoscristianraul/odoo-argentina-ce.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
