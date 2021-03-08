@@ -307,21 +307,3 @@ oca-reporting-engine:
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
-
-oca-reporting-engine:
-  defaults:
-    depth: $DEPTH_DEFAULT
-  remotes:
-    origin: https://github.com/ingadhoc/reporting-engine.git
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-
-oca-reporting-engine:
-  defaults:
-    depth: $DEPTH_DEFAULT
-  remotes:
-    origin: https://github.com/ingadhoc/reporting-engine.git
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
