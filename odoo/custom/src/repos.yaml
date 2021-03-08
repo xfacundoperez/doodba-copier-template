@@ -32,12 +32,296 @@ odoo-argentina:
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
-            
+
+# odoo-argentina-ce desde olmoscristianraul
 odoo-argentina-ce:
   defaults:
     depth: $DEPTH_DEFAULT
   remotes:
     origin: https://github.com/olmoscristianraul/odoo-argentina-ce.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+    
+# Repositorios desde ingadhoc
+ingadhoc-argentina-sale:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    origin: https://github.com/ingadhoc/argentina-sale.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+ingadhoc-miscellaneous:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    origin: https://github.com/ingadhoc/miscellaneous.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+ingadhoc-account-payment:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    origin: https://github.com/ingadhoc/account-payment.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+ingadhoc-account-financial-tools:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    origin: https://github.com/ingadhoc/account-financial-tools.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+ingadhoc-aeroo_reports:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    origin: https://github.com/ingadhoc/aeroo_reports.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+ingadhoc-account-invoicing:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    origin: https://github.com/ingadhoc/account-invoicing.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+ingadhoc-partner:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    origin: https://github.com/ingadhoc/partner.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+ingadhoc-account-analytic:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    origin: https://github.com/ingadhoc/account-analytic.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+ingadhoc-hr:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    origin: https://github.com/ingadhoc/hr.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+ingadhoc-product:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    origin: https://github.com/ingadhoc/product.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+ingadhoc-multi-company:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    origin: https://github.com/ingadhoc/multi-company.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+ingadhoc-purchase:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    origin: https://github.com/ingadhoc/purchase.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+ingadhoc-stock:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    origin: https://github.com/ingadhoc/stock.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+ingadhoc-website:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    origin: https://github.com/ingadhoc/website.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+ingadhoc-sale:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    origin: https://github.com/ingadhoc/sale.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+ingadhoc-project:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    origin: https://github.com/ingadhoc/project.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+ingadhoc-argentina-reporting:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    origin: https://github.com/ingadhoc/argentina-reporting.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+ingadhoc-reporting-engine:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    origin: https://github.com/ingadhoc/reporting-engine.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+ingadhoc-multi-store:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    origin: https://github.com/ingadhoc/multi-store.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+ingadhoc-manufacture:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    origin: https://github.com/ingadhoc/manufacture.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+# backend_theme desde odooerpdevelopers
+odooerpdevelopers-backend_theme:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    origin: https://github.com/odooerpdevelopers/backend_theme.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+# OCA
+oca-helpdesk:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    origin: https://github.com/OCA/helpdesk.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+oca-web:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    origin: https://github.com/oca/web.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+oca-account-financial-reporting:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    origin: https://github.com/oca/account-financial-reporting.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+oca-account-financial-tools:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    origin: https://github.com/oca/account-financial-tools.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+oca-reporting-engine:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    origin: https://github.com/oca/reporting-engine.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+oca-server-ux:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    origin: https://github.com/OCA/server-ux.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+# resumenes de bancos
+oca-bank-statement-import:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    origin: https://github.com/OCA/bank-statement-import.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+oca-reporting-engine:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    origin: https://github.com/ingadhoc/reporting-engine.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+oca-reporting-engine:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    origin: https://github.com/ingadhoc/reporting-engine.git
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+oca-reporting-engine:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    origin: https://github.com/ingadhoc/reporting-engine.git
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
