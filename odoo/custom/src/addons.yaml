@@ -62,7 +62,3 @@ oca-bank-statement-import:
   - "*"
 oca-reporting-engine:
   - "*"
-oca-reporting-engine:
-  - "*"
-oca-reporting-engine:
-  - "*"
