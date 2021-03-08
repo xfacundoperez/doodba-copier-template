@@ -1,3 +1,6 @@
+# Spanish Localization
+l10n-spain:
+  - l10n_es # Overrides built-in l10n_es under odoo/addons
 hcsinergia:
   - "*"
 odoo-argentina:
