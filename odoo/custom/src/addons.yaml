@@ -4,3 +4,65 @@ odoo-argentina:
   - "*"
 odoo-argentina-ce:
   - "*"
+ingadhoc-argentina-sale:
+  - "*"
+ingadhoc-miscellaneous:
+  - "*"
+ingadhoc-account-payment:
+  - "*"
+ingadhoc-account-financial-tools:
+  - "*"
+ingadhoc-aeroo_reports:
+  - "*"
+ingadhoc-account-invoicing:
+  - "*"
+ingadhoc-partner:
+  - "*"
+ingadhoc-account-analytic:
+  - "*"
+ingadhoc-hr:
+  - "*"
+ingadhoc-product:
+  - "*"
+ingadhoc-multi-company:
+  - "*"
+ingadhoc-purchase:
+  - "*"
+ingadhoc-stock:
+  - "*"
+ingadhoc-website:
+  - "*"
+ingadhoc-sale:
+  - "*"
+ingadhoc-project:
+  - "*"
+ingadhoc-argentina-reporting:
+  - "*"
+ingadhoc-reporting-engine:
+  - "*"
+ingadhoc-multi-store:
+  - "*"
+ingadhoc-manufacture:
+  - "*"
+odooerpdevelopers-backend_theme:
+  - "*"
+oca-helpdesk:
+  - "*"
+oca-web:
+  - "*"
+oca-account-financial-reporting:
+  - "*"
+oca-account-financial-tools:
+  - "*"
+oca-reporting-engine:
+  - "*"
+oca-server-ux:
+  - "*"
+oca-bank-statement-import:
+  - "*"
+oca-reporting-engine:
+  - "*"
+oca-reporting-engine:
+  - "*"
+oca-reporting-engine:
+  - "*"
